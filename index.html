@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce For Men</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Toggle the navigation menu visibility on mobile
+            document.getElementById("hamburger-menu").addEventListener("click", function() {
+                var navLinks = document.querySelector(".nav-links");
+                navLinks.classList.toggle("show");  // Toggle the 'show' class to show/hide the navigation links
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <!-- Wrap the image in a link to go back to index.html -->
+        <a href="./index.html" class="logo-link">
+            <img src="./images/scale.png" class="logo-image" alt="scale image">
+            <div class="logo-text">
+                Divorce For Men
+            </div>
+        </a>
+        <div class="contact-info">
+            Call for a Consultation: 727-942-1224
+        </div>       
+    </div>
+    <nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+                <a href="practice_areas/practice-areas.html">Practice Areas<span class="caret"></span></a>
+                <div class="dropdown-content">
+                    <a href="practice_areas/child-support.html">Child Support</a>
+                    <a href="practice_areas/collaborative-divorce.html">Collaborative Divorce</a>
+                    <a href="practice_areas/divorce.html">Divorce</a>
+                    <a href="practice_areas/parenting-time.html">Parenting Time</a>
+                    <a href="practice_areas/paternity.html">Paternity</a>
+                    <a href="practice_areas/prenuptial-agreements.html">Prenuptial Agreements</a>
+                </div>
+            </div>
+            <a href="testimonials/testimonails.html">Testimonials</a>
+    
+            <div class="dropdown">
+                <a href="resources/resources.html">Resources<span class="caret"></span></a>
+                <div class="dropdown-content">
+                    <a href="resources/resources.html">Our Consultation Process</a>
+                    <a href="resources/resources.html">Forms</a>
+                </div>
+            </div>
+            
+            <a href="blog/blog.html">Blog</a>
+            <a href="payment/payment.html">Make a Payment</a>
+            <a href="contact/contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    
+</header>
+</body>
+</html>

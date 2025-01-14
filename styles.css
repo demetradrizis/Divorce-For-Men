@@ -1,0 +1,169 @@
+/* Default mobile styles */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    position: relative; /* Allow positioning of the contact info */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.logo-image {
+    max-width: 30px; /* Shrink logo further on mobile */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Positioning the contact info at the top right corner */
+.contact-info {
+    display: flex;
+    font-size: 8px;
+    color: #777;
+    position: absolute;
+    top: 8px;
+    margin-left: 250px;
+    align-items: right;
+
+}
+
+/* Larger screen styles (e.g., tablets, desktops) */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .logo-link {
+        margin-bottom: 0;
+    }
+
+    .logo-image {
+        max-width: 100px; /* Adjust size for larger screens */
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        text-align: right;
+    }
+}
+
+/* General Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    width: 110%;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #444;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    margin: 2px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none; /* Hide the navigation by default */
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .nav-links.show {
+        display: flex; /* Show the navigation when 'show' class is added */
+    }
+
+    nav a {
+        padding: 15px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+
+    nav .dropdown:hover .dropdown-content {
+        display: block; /* Show dropdown content on mobile as well */
+    }
+}
+
