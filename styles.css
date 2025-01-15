@@ -17,25 +17,25 @@
 }
 
 .logo-image {
-    max-width: 30px; /* Shrink logo further on mobile */
+    max-width: 60px; /* Shrink logo further on mobile */
     margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
 }
 
 /* Positioning the contact info at the top right corner */
 .contact-info {
-    display: flex;
-    font-size: 8px;
+    display: none;
+/*    font-size: 8px;
     color: #777;
     position: absolute;
     top: 8px;
     margin-left: 250px;
-    align-items: right;
+    align-items: right;*/
 
 }
 
@@ -73,10 +73,10 @@ nav {
     display: flex;
     justify-content: space-between;
     
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #333;
     color: #fff;
-    width: 110%;
+    width: 100%;
 }
 
 nav a {
